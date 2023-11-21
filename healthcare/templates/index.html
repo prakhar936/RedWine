@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEST RESULTS</title>
+
+</head>
+<body>
+        <form action="{{url_for('predict')}}"method="post">
+                <p>AGE</p>
+                <input type="text" name="AGE" placeholder="Enter AGE">
+                <br>
+
+                <p>GENDER</p>
+                <select name="gender">
+                    <option value="1">Male</option>
+                    <option value="0">Female</option>
+                </select>
+                <br>
+
+                <p>Blood Type</p>
+                <select name="BloodType">
+                 <option value="4">A+</option>
+                 <option value="6">A-</option>
+                 <option value="7">B+</option>
+                 <option value="2">B-</option>
+                 <option value="3">AB+</option>
+                 <option value="5">AB-</option>
+                 <option value="1">O+</option>
+                 <option value="0">O-</option>
+                </select>
+                <br>
+
+                <p>Medical Condition</p>
+                <select name="MEDICAL CONDITION">
+                  <option value="0">Diabetes</option>
+                  <option value="1">Asthma</option>
+                  <option value="2">Obesity</option>
+                  <option value="3">Arthritis</option>
+                  <option value="4">Hypertension</option>
+                  <option value="5">Cancer</option>
+                </select>
+                <br>
+
+                <p>Enter BILLING AMOUNT</p>
+                <input type="text" name="Billing Amount" placeholder="BILLING AMOUNT">
+                <br>
+
+                <p>ADMISSION TYPE</p>
+                <select name="Admission Type">
+                    <option value="0">Elective</option>
+                    <option value="1">Emergency</option>
+                    <option value="2">Urgent</option>
+                </select>
+                <br>
+                 
+                <p>SELECT MEDICATION</p>
+                <select name="Medication">
+                <option value="0">Aspirin</option>
+                <option value="1">Lipitor</option>
+                <option value="2">Penicillin</option>
+                <option value="3">Paracetamol</option>                
+                <option value="4">Ibuprofen</option>                
+                </select>
+                <br>
+                <br>
+
+                <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+            </form>
+
+
+            <b>{{prediction_text}} </b>
+</body>
+</html>
+
