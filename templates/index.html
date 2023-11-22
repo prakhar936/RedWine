@@ -7,14 +7,28 @@
 </head>
 <body>
     <form action="{{ url_for('predict')}}"method="post">
-    	<input type="text" name="fixed acidity" placeholder="fixed acidity" required="required" />
-        <input type="text" name="volatile acidity" placeholder="volatile acidity" required="required" />
-		<input type="text" name="citric acid" placeholder="citric acid" required="required" />
-        <input type="text" name="chlorides" placeholder="chlorides" required="required"/>
-        <input type="text" name="total sulfur dioxide" placeholder="total sulfur dioxide" required="required"/>
-        <input type="text" name="density" placeholder="density" required="required"/>
-        <input type="text" name="sulphates" placeholder="sulphates" required="required"/>
-        <input type="text" name="alcohol" placeholder="alcohol" required="required"/>
+        <div><input type="text" name="fixed acidity" placeholder="fixed acidity" required="required" /></div>
+        <br>
+        <div><input type="text" name="volatile acidity" placeholder="volatile acidity" required="required" /></div>
+        <br>
+		<div><input type="text" name="citric acid" placeholder="citric acid" required="required" /></div>
+        <br>
+        <div><input type="text" name="chlorides" placeholder="chlorides" required="required"/></div>
+        <br>
+        <div><input type="text" name="total sulfur dioxide" placeholder="total sulfur dioxide" required="required"/></div>
+        <br>
+        <div><input type="text" name="density" placeholder="density" required="required"/></div>
+        <br>
+        <div><input type="text" name="sulphates" placeholder="sulphates" required="required"/></div>
+        <br>
+        <div><input type="text" name="alcohol" placeholder="alcohol" required="required"/></div>
+        <br>
+        <div><input type="text" name="residual suugar" placeholder="Residal Sugar" required="required"/></div>
+        <br>
+        <div><input type="text" name="free sulfur dioxide" placeholder="Free Sulfur Dioxide" required="required"/></div>
+        <br>
+        <div><input type="text" name="pH" placeholder="pH" required="required"/></div>
+        <br>
 
         <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
     </form>
